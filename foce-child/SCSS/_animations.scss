@@ -1,0 +1,93 @@
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner{
+    animation: fadeInDown 2s ease-in-out forwards;
+    &__logo { animation: fadeInDown 2s ease-in-out forwards;
+
+    }
+}
+
+
+
+
+.story {
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+
+
+
+// Définir les keyframes pour la rotation des fleurs
+@keyframes rotateFlower {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.story__article::after {
+    animation: rotateFlower 10s linear infinite;
+}
+
+.story h2::after {
+    animation: rotateFlower 10s linear infinite;
+}
+
+#studio h2::after {
+    animation: rotateFlower 10s linear infinite;
+}
+
+#studio h2::before {
+    animation: rotateFlower 10s linear infinite;
+}
+
+.site-footer::after {
+    animation: rotateFlower 10s linear infinite;
+}
+
+.site-footer::before {
+    animation: rotateFlower 10s linear infinite;
+}
+
+
+// Animation titres
+
+.animation-titre {
+    animation: animation-titre 1s ease;
+}
+
+@keyframes animation-titre {
+    from{
+        transform: translate(0%, 0%) ;
+    }
+    to{
+        transform: translate(0%, 100%) ;
+    }
+}
