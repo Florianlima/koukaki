@@ -38,6 +38,10 @@
   animation: fadeInUp 2s ease-in-out forwards;
 }
 
+.studio__section {
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
 @keyframes rotateFlower {
   from {
     transform: rotate(0deg);
@@ -76,9 +80,9 @@
 
 @keyframes animation-titre {
   from {
-    transform: translate(0%, 0%);
+    transform: translate(0%, 100%);
   }
   to {
-    transform: translate(0%, 100%);
+    transform: translate(0%, 0%);
   }
 }/*# sourceMappingURL=style.css.map */

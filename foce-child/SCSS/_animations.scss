@@ -36,10 +36,14 @@
     animation: fadeInUp 2s ease-in-out forwards;
 }
 
+.studio__section {
+    animation: fadeInUp 2s ease-in-out forwards;
+}
 
 
 
-// Définir les keyframes pour la rotation des fleurs
+
+// la rotation des fleurs
 @keyframes rotateFlower {
     from {
         transform: rotate(0deg);
@@ -85,9 +89,9 @@
 
 @keyframes animation-titre {
     from{
-        transform: translate(0%, 0%) ;
+        transform: translate(0%, 100%) ;
     }
     to{
-        transform: translate(0%, 100%) ;
+        transform: translate(0%, 0%) ;
     }
 }
