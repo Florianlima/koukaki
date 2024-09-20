@@ -1,34 +1,19 @@
-
-const observer_titre = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-     
-      const titre = entry.target.querySelector('.section-title');
+const section_observer = new IntersectionObserver(entries => {
+   entries.forEach(entry => {
     
-      if(entry.isIntersecting) {
-        
-        titre.classList.add('animation-titre');
-        return;
-      }
-      titre.classList.remove('animation-titre');
-    });
-  });
-  
-  observer_titre.observe(document.querySelector('.titre-wrapper'));
-  
-
-  const observer_studio = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-     
-      const studio_titre = entry.target.querySelector('.studio-title');
+     const titre = entry.target.querySelector('h2 div');
     
-      if(entry.isIntersecting) {
-  
-        studio_titre.classList.add('animation-titre');
-        return;
-      }
-      studio_titre.classList.remove('animation-titre');
-    });
-  });
-  
-  observer_studio.observe(document.querySelector('.studio-wrapper'));
-  
+     if(entry.isIntersecting) {
+       
+       titre.classList.add('animation-titre');
+       return;
+     }
+     titre.classList.remove('animation-titre');
+   });
+   
+ });
+const Sections= document.querySelectorAll('.story ,#studio');
+Sections.forEach((section)=>{
+section_observer.observe(section);
+})
+

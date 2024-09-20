@@ -50,26 +50,11 @@
     transform: rotate(360deg);
   }
 }
-.story__article::after {
-  animation: rotateFlower 10s linear infinite;
-}
-
-.story h2::after {
-  animation: rotateFlower 10s linear infinite;
-}
-
-#studio h2::after {
-  animation: rotateFlower 10s linear infinite;
-}
-
-#studio h2::before {
-  animation: rotateFlower 10s linear infinite;
-}
-
-.site-footer::after {
-  animation: rotateFlower 10s linear infinite;
-}
-
+.story__article::after,
+.story h2::after,
+#studio h2::after,
+#studio h2::before,
+.site-footer::after,
 .site-footer::before {
   animation: rotateFlower 10s linear infinite;
 }
