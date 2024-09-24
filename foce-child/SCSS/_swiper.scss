@@ -1,0 +1,25 @@
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    &-slide {
+        background-position:center;
+        background-size: cover;
+        width: 400px;
+        height: 440px;
+        text-align: center;
+    }
+    
+    &-slide img {
+        display: block;
+        width: 100%;
+    }
+    
+
+}
+
+
+

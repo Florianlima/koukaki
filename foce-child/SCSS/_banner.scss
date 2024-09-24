@@ -1,0 +1,47 @@
+@media (min-width: 769px) {
+    .banner {
+      position: relative;  
+    }
+    
+    .video-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }   
+  }
+
+  @media (max-width: 768px) {
+    .video-banner {
+      display: none;
+    }
+}
+
+  @mixin float {
+    animation-name: flottement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;    
+}
+
+.banner__logo {
+    @include float;
+    position: fixed;
+
+}
+
+@keyframes flottement {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.banner img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    
+}

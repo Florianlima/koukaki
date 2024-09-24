@@ -43,3 +43,24 @@ const section_observer = new IntersectionObserver(entries => {
 const Sections = document.querySelectorAll('.story, #studio, .story #place, .main-character');
 Sections.forEach(section => section_observer.observe(section));
 
+
+var video = document.querySelector('.video-banner');
+
+
+
+const swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: false,
+  slidesPerView: "auto",
+  pagination: ".swiper-pagination",
+  coverflowEffect: {
+      rotate: 40,
+      stretch: 0,
+      depth: 20,
+      modifier: 1,
+      slideShadows: false,
+     
+  },  
+  slidesOffsetBefore:300,
+});
