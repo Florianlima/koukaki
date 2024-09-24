@@ -84,3 +84,22 @@
         transform: translate(0%, 0%) ;
     }
 }
+
+.oscars-texte {
+    position: relative;
+    z-index: 1; // Assure-toi que le texte est au-dessus des autres éléments
+}
+
+.word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+
+&.animation-titre {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
