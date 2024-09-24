@@ -34,11 +34,9 @@
   animation: fadeInDown 2s ease-in-out forwards;
 }
 
-.story {
-  animation: fadeInUp 2s ease-in-out forwards;
-}
-
-.studio__section {
+.story,
+.studio__section,
+.oscars {
   animation: fadeInUp 2s ease-in-out forwards;
 }
 
@@ -123,11 +121,9 @@
   display: flex;
   align-items: center;
 }
-
 .site-footer::before {
   top: 11em;
 }
-
 .site-footer::after {
   bottom: 44em;
 }/*# sourceMappingURL=style.css.map */

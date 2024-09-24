@@ -1,3 +1,5 @@
+//Animation Sections
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -29,21 +31,21 @@
     }
 }
 
-
-
-
-.story {
+@mixin fadeInUp {
     animation: fadeInUp 2s ease-in-out forwards;
 }
 
-.studio__section {
-    animation: fadeInUp 2s ease-in-out forwards;
+.story,
+.studio__section,
+.oscars{
+    @include fadeInUp;
 }
-
 
 
 
 // la rotation des fleurs
+
+
 @keyframes rotateFlower {
     from {
         transform: rotate(0deg);
@@ -87,7 +89,7 @@
 
 .oscars-texte {
     position: relative;
-    z-index: 1; // Assure-toi que le texte est au-dessus des autres éléments
+    z-index: 1; 
 }
 
 .word {

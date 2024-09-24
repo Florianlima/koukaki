@@ -36,13 +36,14 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-}
 
-.site-footer::before {
+
+&::before {
     top:11em;
     
 }
 
-.site-footer::after {
+&::after {
     bottom: 44em;
+}
 }
