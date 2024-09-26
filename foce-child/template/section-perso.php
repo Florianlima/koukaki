@@ -1,4 +1,4 @@
-<div class="section-personnages">  
+
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -23,6 +23,6 @@
             </div>
         </div>
     </div>
-</div>
+
 
 

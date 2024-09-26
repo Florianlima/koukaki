@@ -20,6 +20,13 @@
     }
 }
 
+@keyframes flottement {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+
   @mixin float {
     animation-name: flottement;
     animation-duration: 2s;
@@ -33,11 +40,6 @@
 
 }
 
-@keyframes flottement {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
-}
 
 .banner img {
     position: absolute;
