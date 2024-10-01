@@ -61,7 +61,12 @@ get_header();
                 <h3>Le Lieu</h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
-
+            <div class="cloud-wrapper">
+                    <div class="groupe_nuages">
+                        <img class="small_cloud" src="<?php echo get_theme_file_uri() . '/asset/images/little_cloud.png'; ?> " alt="image petit nuage">
+                        <img class="big_cloud" src="<?php echo get_theme_file_uri() . '/asset/images/big_cloud.png'; ?> " alt="image grand nuage">
+                    </div>
+                </div>
         </article>
     </section>
 

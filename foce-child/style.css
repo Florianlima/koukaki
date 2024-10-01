@@ -184,4 +184,41 @@
   width: 400px;
   height: 440px;
   text-align: center;
+}
+
+.story #place {
+  background-image: url("./asset/images/lieux.png");
+}
+
+@keyframes cloudMove {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-300px);
+  }
+}
+.groupe_nuages {
+  filter: blur(15px);
+  margin-bottom: 300px;
+  width: 554px;
+  height: 238px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.groupe_nuages.cloud-animation {
+  opacity: 1;
+}
+
+.small_cloud {
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.1s ease-out;
+}
+
+.big_cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.1s ease-out;
 }/*# sourceMappingURL=style.css.map */
