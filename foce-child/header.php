@@ -37,7 +37,7 @@
 				<div class="burgerBtn">
 					<span></span>
 				</div>
-			</nav><!-- #site-navigation -->
+			</nav>
 
 			<div class="fullscreenMenu">
 				<img class="logoFullscreen" src="<?php echo get_theme_file_uri() . '/asset/images/petit_logo.png'; ?>" alt="logo menu fullscreen">
