@@ -129,3 +129,52 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.cloud-wrapper'));
 
+
+// Menu Burger
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Sélection des éléments bouton du menu burger et menu fullscreen
+  const menuBurger = document.querySelector('.burgerBtn');
+  const fullscreenMenu = document.querySelector('.fullscreenMenu');
+
+  // Ajout d'un écouteur d'événement click au bouton de menu burger
+  menuBurger.addEventListener('click', function () {
+      // Ajout de la classe 'active' pour animer le bouton de menu burger
+      menuBurger.classList.toggle('active');
+
+      // Ajout de la classe 'open' pour afficher ou masquer le menu fullscreen
+      fullscreenMenu.classList.toggle('open');
+  });
+});
+
+
+
+
+// Apparition lien menu 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBurger = document.querySelector('.burgerBtn');
+  const fullscreenMenu = document.querySelector('.fullscreenMenu');
+
+  menuBurger.addEventListener('click', function () {
+      // Sélection des éléments menu fullscreen et tous les liens du menu
+      const menuLinks = fullscreenMenu.querySelectorAll('ul li a');
+
+      // Ajout de la classe 'titleAnimation' à chaque lien du menu
+      menuLinks.forEach((link) => {
+          link.classList.add('titleAnimation');
+      });
+
+      // Déclenchement de l'animation avec un délai
+      setTimeout(() => {
+          menuLinks.forEach((link, index) => {
+              const delay = index === 0 ? 400 : index * 600;
+
+              // Ajout de la classe 'visibility' avec le délai spécifié
+              setTimeout(() => {
+                  link.classList.add('visibility');
+              }, delay);
+          });
+      }, 150);
+  });
+});

@@ -221,4 +221,208 @@
   top: 0;
   right: 0;
   transition: transform 0.1s ease-out;
+}
+
+/* Styles pour le menu burger */
+.main-navigation {
+  display: flex;
+  position: fixed;
+  width: 1440px;
+}
+.main-navigation ul {
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  margin-left: 580px;
+}
+.main-navigation button {
+  margin-left: 400px;
+}
+
+.burgerBtn {
+  width: 42px;
+  height: 24px;
+  margin-top: 27px;
+  margin-left: 450px;
+  cursor: pointer;
+  position: relative;
+}
+.burgerBtn span {
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.burgerBtn span::before, .burgerBtn span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  transition: transform 0.5s ease-in-out;
+}
+.burgerBtn span::before {
+  transform: translateY(-10px);
+}
+.burgerBtn span::after {
+  transform: translateY(10px);
+}
+.burgerBtn.active span {
+  background-color: transparent !important;
+}
+.burgerBtn.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burgerBtn.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+/* Styles pour le menu en plein écran */
+.site-navigation .title-site {
+  position: fixed;
+}
+
+.fullscreenMenu {
+  position: fixed;
+  top: 80px;
+  left: 232px;
+  width: 1440px;
+  height: 1024px;
+  background-color: #FFF5E9;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in;
+}
+.fullscreenMenu.open {
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  animation: menuFadein 1s ease-in-out;
+}
+@keyframes menuFadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fullscreenMenu img {
+  margin: auto;
+  display: flex;
+}
+.fullscreenMenu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 190px;
+}
+.fullscreenMenu li {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120px;
+  list-style-type: none;
+  margin: 0;
+}
+.fullscreenMenu a:hover {
+  color: black;
+  text-shadow: -1px -1px 3px rgba(255, 92, 0, 0.5019607843), 3px -1px 3px rgba(255, 92, 0, 0.3), -1px 3px 3px rgba(255, 92, 0, 0.3), 3px 3px 3px rgba(255, 92, 0, 0.3);
+}
+.fullscreenMenu p {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 20px;
+}
+.fullscreenMenu a {
+  text-decoration: none;
+}
+.fullscreenMenu .logoFullscreen {
+  position: absolute;
+  left: 627px;
+  top: 45px;
+}
+.fullscreenMenu .orchidMenu {
+  position: absolute;
+  left: -60px;
+  width: 150px;
+  height: 148px;
+  top: 70px;
+  animation: rotateFlower 10s linear infinite;
+}
+.fullscreenMenu .flowerMenu {
+  position: absolute;
+  position: absolute;
+  top: 435px;
+  left: 289px;
+  width: 70px;
+  height: 70px;
+  animation: rotateFlower 10s linear infinite;
+}
+.fullscreenMenu .sunflowerMenu {
+  position: absolute;
+  position: absolute;
+  top: 90px;
+  left: 950px;
+  width: 216px;
+  height: 216px;
+  animation: rotateFlower 10s linear infinite;
+}
+.fullscreenMenu .randomflowerMenu {
+  position: absolute;
+  position: absolute;
+  top: 370px;
+  left: 1396px;
+  width: 75px;
+  height: 75px;
+  animation: rotateFlower 10s linear infinite;
+}
+.fullscreenMenu .hibiscusMenu {
+  position: absolute;
+  position: absolute;
+  top: 595px;
+  left: 1100px;
+  width: 626px;
+  height: 626px;
+  animation: rotateFlower 10s linear infinite;
+}
+.fullscreenMenu .blueCatMenu {
+  position: absolute;
+  position: absolute;
+  top: 185px;
+  left: 355px;
+  width: 109px;
+  height: 98px;
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.fullscreenMenu .orangeCatMenu {
+  position: absolute;
+  position: absolute;
+  top: 670px;
+  left: 101px;
+  width: 105px;
+  height: 95px;
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.fullscreenMenu .blackCatMenu {
+  position: absolute;
+  position: absolute;
+  top: 445px;
+  left: 921px;
+  width: 135px;
+  height: 128px;
+  animation-name: flottement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }/*# sourceMappingURL=style.css.map */
