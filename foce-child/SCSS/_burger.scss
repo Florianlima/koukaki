@@ -33,7 +33,6 @@
         display: block;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
         transition: background-color 0.5s ease-in-out;
 
         &::before,
@@ -47,11 +46,11 @@
         }
 
         &::before {
-            transform: translateY(-10px);
+            transform: translateY(-9px);
         }
 
         &::after {
-            transform: translateY(10px);
+            transform: translateY(9px);
         }
     }
 
@@ -127,7 +126,11 @@
 
     a:hover {
         color: black;
-        text-shadow: -1px -1px 3px #ff5c0080, 3px -1px 3px rgba(255, 92, 0, 0.3), -1px 3px 3px rgba(255, 92, 0, 0.3), 3px 3px 3px rgba(255, 92, 0, 0.3);
+        text-shadow:
+            -1px -1px 3px #ff5c0080,
+            3px -1px 3px rgba(255, 92, 0, 0.3),
+            -1px 3px 3px rgba(255, 92, 0, 0.3),
+            3px 3px 3px rgba(255, 92, 0, 0.3);
     }
 
     p {
@@ -226,4 +229,3 @@
         @include float
     }
 }
-

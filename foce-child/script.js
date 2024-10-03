@@ -1,22 +1,3 @@
-/*const section_observer = new IntersectionObserver(entries => {
-   entries.forEach(entry => {
-    
-     const titre = entry.target.querySelector('h2 div , h3 ');
-    
-     if(entry.isIntersecting) {
-       
-       titre.classList.add('animation-titre');
-       return;
-     }
-     titre.classList.remove('animation-titre');
-   });
-   
- });
-const Sections= document.querySelectorAll('.story ,#studio ,.story #place ,.main-character');
-Sections.forEach((section)=>{
-section_observer.observe(section);
-})
-*/
 
 /* animation titre*/
 
@@ -47,29 +28,8 @@ const Sections = document.querySelectorAll('.story, #studio, .story #place, .mai
 Sections.forEach(section => section_observer.observe(section));
 
 
-/*Swiper*/
+//Swiper
 
-/*const swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: false,
-  slidesPerView: "auto",
-  pagination: ".swiper-pagination",
-  loop: true,
-  loopedSlide : 2,
-  loopAdditionalSlides : 1,
-
-
-  coverflowEffect: {
-    rotate: 40,
-    stretch: 0,
-    depth: 20,
-    modifier: 1,
-    slideShadows: false,
-
-  },
-  slidesOffsetBefore: 300,
-});*/
 const swiper = new Swiper(".mySwiper", {
   direction: 'horizontal',
   centeredSlides: true,
