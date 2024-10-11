@@ -79,11 +79,7 @@ const observer = new IntersectionObserver(entries => {
       
       entry.target.addEventListener('mouseleave', () => {
         window.removeEventListener('scroll', handleScroll);
-      });
-
-      
-      smallCloud.style.transform = 'translateX(0px)';
-      bigCloud.style.transform = 'translateX(0px)';
+      });    
     }
   });
 }, { threshold: 0.1 });
@@ -97,10 +93,18 @@ document.addEventListener('DOMContentLoaded', function () {
  
   const menuBurger = document.querySelector('.burgerBtn');
   const fullscreenMenu = document.querySelector('.fullscreenMenu');
-  menuBurger.addEventListener('click', function () {     
-      menuBurger.classList.toggle('active');
-      fullscreenMenu.classList.toggle('open');
 
-     
+  menuBurger.addEventListener('click', function () {     
+    menuBurger.classList.toggle('active');
+    fullscreenMenu.classList.toggle('open');
+  });
+
+  const menuLinks = fullscreenMenu.querySelectorAll('ul li a');
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      menuBurger.classList.remove('active');
+      fullscreenMenu.classList.remove('open');
+    });
   });
 });
+
