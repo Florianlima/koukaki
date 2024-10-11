@@ -78,7 +78,6 @@
 .fullscreenMenu {
     position: fixed;
     top: 80px;
-    left: 232px;
     width: 1440px;
     height: 1024px;
     background-color: #FFF5E9;
@@ -91,7 +90,7 @@
         overflow: hidden;
         opacity: 1;
         visibility: visible;
-        animation: menuFadein 1s ease-in-out;
+        animation: menuFadein 2s ease-in-out;
 
         @keyframes menuFadein {
             0% {
@@ -117,8 +116,8 @@
     }
 
     li {
-        font-weight: 500;
-        font-size: 40px;
+        font-weight: 400;
+        font-size: 64px;
         line-height: 120px;
         list-style-type: none;
         margin: 0;
@@ -161,7 +160,6 @@
 
     .flowerMenu {
         position: absolute;
-        position: absolute;
         top: 435px;
         left: 289px;
         width: 70px;
@@ -170,7 +168,6 @@
     }
 
     .sunflowerMenu {
-        position: absolute;
         position: absolute;
         top: 90px;
         left: 950px;
@@ -181,7 +178,6 @@
 
     .randomflowerMenu {
         position: absolute;
-        position: absolute;
         top: 370px;
         left: 1396px;
         width: 75px;
@@ -190,7 +186,6 @@
     }
 
     .hibiscusMenu {
-        position: absolute;
         position: absolute;
         top: 595px;
         left: 1100px;
@@ -201,7 +196,6 @@
 
     .blueCatMenu {
         position: absolute;
-        position: absolute;
         top: 185px;
         left: 355px;
         width: 109px;
@@ -211,7 +205,6 @@
 
     .orangeCatMenu {
         position: absolute;
-        position: absolute;
         top: 670px;
         left: 101px;
         width: 105px;
@@ -220,7 +213,6 @@
     }
 
     .blackCatMenu {
-        position: absolute;
         position: absolute;
         top: 445px;
         left: 921px;

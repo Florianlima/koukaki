@@ -67,10 +67,11 @@ const observer = new IntersectionObserver(entries => {
 
       const handleScroll = () => {
         const scrollPosition = window.scrollY - entry.target.offsetTop;
-        const translateValue = Math.min(scrollPosition, 300);
+        const translateValue =Math.min(Math.max(scrollPosition, 0), 300);
 
-        smallCloud.style.transform = `translateX(${-translateValue}px)`;
-        bigCloud.style.transform = `translateX(${-translateValue}px)`;
+        smallCloud.style.transform = 'translateX(' + -translateValue + 'px)';
+        bigCloud.style.transform = 'translateX(' + -translateValue + 'px)';
+
       };
 
       window.addEventListener('scroll', handleScroll);
@@ -100,9 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
       menuBurger.classList.toggle('active');
       fullscreenMenu.classList.toggle('open');
 
-      const menuLinks = fullscreenMenu.querySelectorAll('ul li a');
-      menuLinks.forEach((link) => {
-        link.classList.add('titleAnimation');
-    });
+     
   });
 });

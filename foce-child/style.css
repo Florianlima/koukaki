@@ -268,7 +268,6 @@
 .fullscreenMenu {
   position: fixed;
   top: 80px;
-  left: 232px;
   width: 1440px;
   height: 1024px;
   background-color: #FFF5E9;
@@ -281,7 +280,7 @@
   overflow: hidden;
   opacity: 1;
   visibility: visible;
-  animation: menuFadein 1s ease-in-out;
+  animation: menuFadein 2s ease-in-out;
 }
 @keyframes menuFadein {
   0% {
@@ -302,8 +301,8 @@
   margin-top: 190px;
 }
 .fullscreenMenu li {
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 64px;
   line-height: 120px;
   list-style-type: none;
   margin: 0;
@@ -335,7 +334,6 @@
 }
 .fullscreenMenu .flowerMenu {
   position: absolute;
-  position: absolute;
   top: 435px;
   left: 289px;
   width: 70px;
@@ -343,7 +341,6 @@
   animation: rotateFlower 10s linear infinite;
 }
 .fullscreenMenu .sunflowerMenu {
-  position: absolute;
   position: absolute;
   top: 90px;
   left: 950px;
@@ -353,7 +350,6 @@
 }
 .fullscreenMenu .randomflowerMenu {
   position: absolute;
-  position: absolute;
   top: 370px;
   left: 1396px;
   width: 75px;
@@ -362,7 +358,6 @@
 }
 .fullscreenMenu .hibiscusMenu {
   position: absolute;
-  position: absolute;
   top: 595px;
   left: 1100px;
   width: 626px;
@@ -370,7 +365,6 @@
   animation: rotateFlower 10s linear infinite;
 }
 .fullscreenMenu .blueCatMenu {
-  position: absolute;
   position: absolute;
   top: 185px;
   left: 355px;
@@ -383,7 +377,6 @@
 }
 .fullscreenMenu .orangeCatMenu {
   position: absolute;
-  position: absolute;
   top: 670px;
   left: 101px;
   width: 105px;
@@ -394,7 +387,6 @@
   animation-timing-function: ease-in-out;
 }
 .fullscreenMenu .blackCatMenu {
-  position: absolute;
   position: absolute;
   top: 445px;
   left: 921px;
@@ -478,11 +470,13 @@
   .oscars {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
   }
   .oscars .oscars-image {
     font-size: 35px !important;
     font-weight: 400 !important;
     line-height: 30px !important;
+    width: 100%;
   }
   .oscars::after {
     animation: none !important;
@@ -546,54 +540,48 @@
     margin-left: -69px !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1440px) {
   .main-navigation {
     width: 100% !important;
     height: 80px !important;
   }
   .main-navigation li {
-    margin-left: -600px !important;
+    margin-left: -400px !important;
   }
   .burgerBtn {
-    margin-left: -15px !important;
+    margin-left: 0px !important;
   }
-}
-.fullscreenMenu {
-  top: 50px !important;
-  left: 0px !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-.fullscreenMenu li {
-  font-size: 30px !important;
-  line-height: 90px !important;
-}
-.fullscreenMenu p {
-  margin-top: 125px !important;
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .main-navigation {
+  .fullscreenMenu {
+    left: 0px !important;
     width: 100% !important;
-    height: 80px !important;
+    height: 100% !important;
   }
-  .main-navigation li {
-    margin-left: -600px !important;
+  .fullscreenMenu .blueCatMenu {
+    left: 663px !important;
   }
-  .burgerBtn {
-    margin-left: -15px !important;
+  .fullscreenMenu .logoFullscreen {
+    left: 270px !important;
   }
-}
-.fullscreenMenu {
-  top: 50px !important;
-  left: 0px !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-.fullscreenMenu li {
-  font-size: 30px !important;
-  line-height: 90px !important;
-}
-.fullscreenMenu p {
-  margin-top: 125px !important;
+  .fullscreenMenu .flowerMenu {
+    top: 441px !important;
+    left: 450px !important;
+    display: none;
+  }
+  .fullscreenMenu .sunflowerMenu {
+    top: 697px !important;
+    left: 545px !important;
+  }
+  .randomflowerMenu,
+  .hibiscusMenu {
+    display: none !important;
+  }
+  .video {
+    width: 100%;
+  }
+  .banner {
+    min-height: 400px;
+  }
+  .banner .logo {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

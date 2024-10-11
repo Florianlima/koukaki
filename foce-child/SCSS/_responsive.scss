@@ -88,10 +88,12 @@
    .oscars{
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
         .oscars-image {
             font-size: 35px !important;
             font-weight: 400 !important;
             line-height: 30px !important;
+            width: 100%;
         }
         &::after {
             animation: none !important;
@@ -183,65 +185,63 @@
     }
 
 }
-@media (min-width: 768px) and (max-width: 1024px) {
 
-    .main-navigation {
-        width: 100% !important;
-        height: 80px !important;
 
-        li {
-            margin-left: -600px !important;
+    @media (min-width: 769px) and (max-width: 1440px) {
+
+        .main-navigation {
+            width: 100% !important;
+            height: 80px !important;
+    
+            li {
+                margin-left: -400px !important;
+            }
+        }
+    
+        .burgerBtn {
+            margin-left: -0px !important;
+        }
+    
+        .fullscreenMenu {
+            left: 0px !important;
+            width: 100% !important;
+            height: 100% !important;
+    
+            .blueCatMenu {
+                left: 663px !important;
+            }
+    
+            .logoFullscreen {
+                left: 270px !important;
+            }
+    
+            .flowerMenu {
+                top: 441px !important;
+                left: 450px !important;
+                display: none;
+            }
+    
+            .sunflowerMenu {
+                top: 697px !important;
+                left: 545px !important;
+            }
+        }
+    
+        .randomflowerMenu,
+        .hibiscusMenu {
+            display: none !important;
+        }
+    
+        .video {
+            width: 100%;
+        }
+    
+        .banner {
+            min-height: 400px;
+    
+            .logo {
+                width: 300px;
+            }
         }
     }
 
-    .burgerBtn {
-        margin-left: -15px !important;
-    } 
-}
-
-.fullscreenMenu {
-    top: 50px !important;
-    left: 0px !important;
-    width: 100% !important;
-    height: 100% !important;
-
-    li {
-        font-size: 30px !important;
-        line-height: 90px !important;
-    }
-
-    p {
-        margin-top: 125px !important;
-    }
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-
-    .main-navigation {
-        width: 100% !important;
-        height: 80px !important;
-
-        li {
-            margin-left: -600px !important;
-        }
-    }
-
-    .burgerBtn {
-        margin-left: -15px !important;
-    } 
-}
-
-.fullscreenMenu {
-    top: 50px !important;
-    left: 0px !important;
-    width: 100% !important;
-    height: 100% !important;
-
-    li {
-        font-size: 30px !important;
-        line-height: 90px !important;
-    }
-
-    p {
-        margin-top: 125px !important;
-    }
-}
